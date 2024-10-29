@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons from Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="header">
+                <a href="/home/index.html"><img src="images/home.png" alt="Profile Picture" class="profile-pic"></a>
+                <div class="header-icons">
+                    <i class="fa fa-comment"></i>
+                    <i class="fa fa-ellipsis-v"></i>
+                </div>
+            </div>
+            <div class="search">
+                <div class="search-container">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="Search or start new chat" id="search-input">
+                </div>
+            </div>
+            <div class="contacts" id="contacts">
+                <!-- Contacts will be dynamically added here -->
+            </div>
+        </div>
+
+        <!-- Chat Area -->
+        <div class="chat">
+            <div class="chat-header">
+                <img src="images/user.png" alt="Contact Picture" class="profile-pic" id="chat-profile-pic">
+                <div class="chat-info">
+                    <h3 id="chat-name">Select a chat</h3>
+                    <p id="chat-status"></p>
+                </div>
+                <div class="chat-header-icons">
+                    <i class="fa fa-search"></i>
+                    <i class="fa fa-ellipsis-v"></i>
+                </div>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <!-- Messages will be dynamically added here -->
+            </div>
+            <div class="chat-input">
+                <i class="fa fa-smile"></i>
+                <input type="text" placeholder="Type a message" id="message-input" disabled>
+                <i class="fa fa-paper-plane" id="send-button"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+
+/* heading */
+.navbar.navbar-expand-sm{
+    background-color: #028090 !important;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav-link{
+    margin-left: 3rem;
+    color:white;
+   font-size: 1rem;
+   
+}
+/* dropdown */
+.drop{
+  text-decoration: none;
+  color:white;
+  font-size: 1rem;
+
+}
+.dropdown-item{
+  background-color: #028090 !important ;
+  color:white !important;
+}
+
+
+/* Sidebar */
+.sidebar {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#00A896;
+    overflow-x: hidden;
+    transition: 0.5s;
+    /* padding-top: 60px; */
+  }
+ 
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color:white;
+    display: block;
+    transition: 0.3s;
+    margin-top: 0;
+  }
+  
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: white !important;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color:#028090;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+
+
+  /* tanya sharma */
+  .name{
+    margin-top: 1rem;
+    
+  }
+  .line1{
+    margin-top:-70px;
+  }
+  .line2{
+    margin-top:-100px;
+  }
+  
+
+  
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+  /* MIDDLE PART */
+  
+  body{
+    background-image: url("images/photo3.jpg");
+    background-size: cover;
+
+  }
+
+ .main{
+    
+    height: 99%;
+    width: 100%;
+    margin-top: .1rem;
+    margin:0;
+   
+  }
+  .head{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bolder;
+    margin-left: 70%;
+    font-size: 5rem;
+  }
+  .box{
+    margin:auto;
+  }
+  .card{
+    border: 5px solid #00A896 ;
+    height: 20rem;
+    width: 20rem;
+    display: inline-block;
+    margin-left: 7rem;
+    margin-top: 1rem;
+    border-radius: 3rem;
+  }
+  #one{
+    background-image: url("images/ch1.jpg");
+    background-size: cover;
+  }
+  #two{
+    background-image: url("images/ch2.jpg");
+    background-size:cover;
+    }
+  #three{
+    background-image:url("images/ch3.jpeg") ;
+    background-size:cover;
+  }
+  #four{
+    background-image:url("images/ch4.jpg") ;
+    background-size:cover;
+  }
+  #five{
+    background-image:url("images/ch5.webp") ;
+    background-size:cover;
+  }
+  #six{
+    background-image: url("images/ch6.jpeg");
+    background-size:cover;
+    }
+
+    .footer{
+      position: absolute;
+        background-color:  #028090;
+        margin-top: 4rem;
+        height:fit-content;
+      width: 100%;
+      left: 0;
+      right:0;
+      margin-top: 5rem;
+     
+     
+      }
+     
+      .footer_para{
+        color: white;
+        margin-top: 3rem !important;
+        font-size: 1.4rem;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      
+      .durga_footer{
+        font-family: math;
+        font-weight: 700;
+       }
+       .list-inline-item{
+        color:white;}
+       .row{
+        justify-content: space-around;
+       }

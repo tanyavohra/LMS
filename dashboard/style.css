@@ -1,0 +1,250 @@
+body{
+    background-color: #F9D162;
+}
+
+
+/* heading */
+.navbar.navbar-expand-sm{
+  background-color: #028090 !important;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav-link{
+  margin-left: 3rem;
+  color:white;
+ font-size: 1rem;
+ 
+}
+/* dropdown */
+.drop{
+text-decoration: none;
+color:white;
+font-size: 1rem;
+
+}
+.dropdown-item{
+background-color: #028090 !important ;
+color:white !important;
+}
+
+
+/* Sidebar */
+.sidebar {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#00A896;
+  overflow-x: hidden;
+  transition: 0.5s;
+  /* padding-top: 60px; */
+}
+
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color:white;
+  display: block;
+  transition: 0.3s;
+  margin-top: 0;
+}
+
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: white !important;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color:#028090;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+
+/* tanya sharma */
+.name{
+  margin-top: 1rem;
+  
+}
+.line1{
+  margin-top:-70px;
+}
+.line2{
+  margin-top:-100px;
+}
+
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+  .profile_image{
+    float: right;
+    margin-top: 0;
+  }
+/* heading */
+
+.heading{
+    color: #002F42;
+    font-size:xxx-large;
+    font-weight: bolder;
+    font-family: system-ui;
+    margin-left: 1vw;
+}
+
+.sub_heading{
+    color: white;
+    font-size: xx-large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 4vh;
+    margin-left: 2vw;
+}
+
+
+/* CARD */
+
+.division1 , .division2 , .division3 {
+    background-color: white;
+    width: 70%;
+    margin-top: 4vh;
+    margin-left: 1vw;
+    border-radius: 12px;
+    justify-items: center;
+    height: 15vh;
+    
+}
+
+ .division2 , .division3{
+    margin-top: 7vh;
+ }
+
+.head1{
+    margin-left: 1.5vw;
+    color: black;
+    font-weight: 700;
+    font-size: larger;
+    margin-top: 3vh;
+}
+.head2{
+    color: black;
+    margin-left: 1.5vw;
+    font-weight: 600;
+
+}
+.head3{
+    color: black;
+    margin-left: 1.5vw;
+    font-weight: 600;
+    margin-top: 0.6vh;
+}
+
+/* PROGRESS-BAR */
+
+.progress{
+    width: 90%;
+    margin-left: 1.5vw;
+    margin-top: 1.2vh;
+    background-color: #00A896;
+    border-radius: 10px;
+}
+.progress-bar{
+    background-color:#F9D162 ;
+    border-radius: 10px;
+}
+
+.report{
+  width: 70%;
+}
+.page{
+  display: flex;
+}
+
+
+/* PROFILE */
+
+.box2{
+  border:4px solid #00A896 ;
+  width:25%;
+  float:right;
+  margin-top:5rem;
+  margin-right: 5rem;
+  width:100%;
+  height:35rem;
+  border-radius:2rem;
+  background-image: url("images/parentprofile.png");
+  background-size: cover;
+}
+#parentprofile{
+margin-left:40%;
+margin-top:25%;
+width:6rem;
+border-radius:50%;
+border: #f9d162,solid,3px;
+}
+.entry{
+background-color: white;
+border-radius: 2rem;
+width:100%;
+height:2rem;
+
+}
+h1{
+font-size:100%;
+margin-left:1rem;
+padding-top: 0.4rem;
+}
+.p-2{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin-left:1rem;
+}
+.profile{
+  width: 30%;}
+
+
+
+/* FOOTER */
+
+.footer{
+  position: absolute;
+    background-color:  #028090;
+    margin-top: 4rem;
+    height:fit-content;
+  width: 100%;
+  left: 0;
+  right:0;
+  margin-top: 5rem;
+ 
+ 
+  }
+ 
+  .footer_para{
+    color: white;
+    margin-top: 3rem !important;
+    font-size: 1.4rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .durga_footer{
+    font-family: math;
+    font-weight: 700;
+   }
+   .list-inline-item{
+    color:white;}
+   .row{
+    justify-content: space-around;
+   }

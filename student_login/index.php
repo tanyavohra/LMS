@@ -1,0 +1,129 @@
+<?php
+$submit=false; 
+if(isset($_POST['name'])){
+$server = "localhost";
+$username = "root";
+$password ="";
+
+$con = mysqli_connect($server,$username,$password);
+
+if(!$con){
+    die("connection to this database failed due to".mysqli_connect_error());
+}
+//echo "sucess";
+$name=$_POST['name'];
+$email=$_POST['email'];
+$password=$_POST['password'];
+$sql = "INSERT INTO `lms(sahaay)`.`new students`  (`name`, `email`, `password`) 
+VALUES ('$name', '$email', '$password');";
+//echo $sql;
+
+if($con->query($sql)==true){
+    $submit=true;
+   // echo "successfully inserted";
+}
+else{
+    echo "ERROR: $sql <br> $con->error";
+}
+$con->close();
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-in</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+                <button class="openbtn" onclick="openNav()"><image src="images/photo1.jpg" style="width:8rem" class="rounded-pill"></image></button>
+                <button class="navbar-toggler" type="button"data-bs-toggle="collapse" data-bs-target="#myNavbar"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="/contact_us/index.html">CONTACT US <img src="images/phone.png" class="img"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="/about_us/index.html">ABOUT US <img src="images/Vector.png" class="img"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="/library/index.html">LIBRARY <img src="images/book.png" class="img"></a></li>
+                        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">LOGIN <img src="images/login.png" class="img"></a>
+                            <ul class="dropdown-menu">
+                               <li><a class="dropdown-item" href="/parent_login/signin.html">PARENT</a></li>
+                               <li><a class="dropdown-item" href="/student_login/signin.html">STUDENT</a></li>
+                            </ul>
+                       </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+     <!--SIDE BAR-->
+     <div id="mySidebar" class="sidebar">
+        <a class="closebtn" onclick="closeNav()">X</a>
+        <a href="/dashboard/index.html"><h3>TANMAY VYAS</h3></a>
+        <a href="/dashboard/index.html"><p>8th Standard</p></a>
+        <img src="images/Line 4.png" class="line1">
+        <img src="images/Line 4.png" class="line2">
+        <a href="/home/index.html"><img src="images/home.png"> HOME</a><br>
+        <a href="/dashboard/index.html"><img src="images/dashboard.png"> DASHBOARD</a><br>
+        <a href="/parent_control/index.html"><img src="images/parent.png"> PARENTAL CONTROL</a><br>
+        <a href="/chat/index.html"><img src="images/chat.png"> CHAT</a><br>
+        <a href="/shop/index.html"><img src="images/shop.png"> SHOP</a><br>
+     </div>
+     <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "370px";
+          document.getElementById("main").style.marginLeft = "370px";
+        }
+    
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+        }
+      </script>
+    </header> 
+    
+
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="index.php" method="post">
+                <h1>Create Account</h1>
+                    <input type="text" name="name" id="name" placeholder="enter your name">
+                    <input type="email" name="email" id="email" placeholder="enter your email">
+                    <input type="password" name="password" id="password" placeholder="create password">
+                    <input type="conpassword" name="conpassword" id="conpassword" placeholder="confirm password">
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form action="index.php" method="post">
+                <h1>Sign In</h1>
+                    <input type="text" name="name" id="name" placeholder="enter your name">
+                    <input type="email" name="email" id="email" placeholder="enter your email">
+                    <input type="password" name="password" id="password" placeholder="enter your password">
+                    <button class="btn">Submit</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>If you are already registered!</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Sign up!</h1>
+                    <p>Register if you are not registered</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="signin.js"></script>
+</body>
+</html>
