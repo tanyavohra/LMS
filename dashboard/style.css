@@ -9,10 +9,15 @@ body{
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .nav-link{
-  margin-left: 3rem;
+  margin-left: 0;
   color:white;
  font-size: 1rem;
  
+}
+@media (min-width: 576px) {
+  .nav-link {
+    margin-left: 1.5rem;
+  }
 }
 /* dropdown */
 .drop{
@@ -120,12 +125,12 @@ color:white !important;
 
 .division1 , .division2 , .division3 {
     background-color: white;
-    width: 70%;
+    width: 100%;
     margin-top: 4vh;
     margin-left: 1vw;
     border-radius: 12px;
     justify-items: center;
-    height: 15vh;
+    min-height: 7rem;
     
 }
 
@@ -168,10 +173,13 @@ color:white !important;
 }
 
 .report{
-  width: 70%;
+  flex: 1 1 32rem;
+  min-width: 18rem;
 }
 .page{
   display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 
@@ -179,15 +187,14 @@ color:white !important;
 
 .box2{
   border:4px solid #00A896 ;
-  width:25%;
-  float:right;
-  margin-top:5rem;
-  margin-right: 5rem;
   width:100%;
   height:35rem;
   border-radius:2rem;
   background-image: url("images/parentprofile.png");
   background-size: cover;
+  max-width: 22rem;
+  margin: 2rem auto;
+  float: none;
 }
 #parentprofile{
 margin-left:40%;
@@ -213,21 +220,19 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 margin-left:1rem;
 }
 .profile{
-  width: 30%;}
+  flex: 1 1 18rem;
+  min-width: 18rem;
+}
 
 
 
 /* FOOTER */
 
 .footer{
-  position: absolute;
-    background-color:  #028090;
-    margin-top: 4rem;
-    height:fit-content;
+  background-color:  #028090;
+  height:fit-content;
   width: 100%;
-  left: 0;
-  right:0;
-  margin-top: 5rem;
+  margin-top: 2rem;
  
  
   }

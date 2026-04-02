@@ -5,10 +5,15 @@
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .nav-link{
-    margin-left: 3rem;
+    margin-left: 0;
     color:white;
    font-size: 1rem;
    
+}
+@media (min-width: 576px) {
+  .nav-link {
+    margin-left: 1.5rem;
+  }
 }
 /* dropdown */
 .drop{
@@ -94,6 +99,7 @@
   body{
     background-image: url("images/pcbg.png");
     background-size: cover;
+    background-position: center;
 
   }
 
@@ -108,8 +114,9 @@
   }
   .head{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bolder;
-    margin-left:5%;
-    font-size: 5rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    font-size: clamp(2.25rem, 6vw, 4.5rem);
     color:#002f42;
   }
   .card-text{
@@ -125,21 +132,27 @@
   }
   .box2{
     border:4px solid #00A896 ;
-    width:30%;
-    float:right;
-    margin-top:10rem;
-    margin-right: 2rem;
-    width:25%;
-    height:35rem;
+    width: min(22rem, 92vw);
+    float: none;
+    margin: 2rem auto;
+    min-height: 32rem;
     border-radius:2rem;
     background-image: url("images/parentprofile.png");
     background-size: cover;
 
     
   }
+  @media (min-width: 992px) {
+    .box2 {
+      float: right;
+      margin-top: 6rem;
+      margin-right: 2rem;
+      margin-left: 2rem;
+    }
+  }
  #parentprofile{
-  margin-left:40%;
-  margin-top:25%;
+  display: block;
+  margin: 8rem auto 0;
   width:6rem;
   border-radius:50%;
   border: #f9d162,solid,3px;
@@ -161,17 +174,16 @@
   margin-left:1rem;
  }
   .card{
-    width:18rem;
-    margin-left:2rem;
-    margin-top: 1rem;
+    width: min(18rem, 92vw);
+    margin: 0;
     border: 3px solid #00A896 ;
     border-radius: 2.5rem;
   }
 
   .image{
     border-radius: 3rem;
-    height: 15rem;
-    width: 16rem;
+    height: 12rem;
+    width: 100%;
    
    
   }
@@ -201,14 +213,10 @@
     }
 
     .footer{
-      position: absolute;
-        background-color:  #028090;
-        margin-top: 4rem;
-        height:fit-content;
+      background-color:  #028090;
+      height:fit-content;
       width: 100%;
-      left: 0;
-      right:0;
-      margin-top: 5rem;
+      margin-top: 2rem;
      
      
       }

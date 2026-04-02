@@ -1,0 +1,105 @@
+:root {
+  --brand-1: #028090;
+  --brand-2: #00a896;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main.page-content {
+  flex: 1;
+}
+
+/* Navbar / sidebar shared styling */
+.navbar.navbar-expand-sm {
+  background-color: var(--brand-1) !important;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.nav-link {
+  color: white;
+  font-size: 1rem;
+}
+
+@media (min-width: 576px) {
+  .nav-link {
+    margin-left: 1.5rem;
+  }
+}
+
+.dropdown-item {
+  background-color: var(--brand-1) !important;
+  color: white !important;
+}
+
+.openbtn {
+  cursor: pointer;
+  background-color: var(--brand-1);
+  border: none;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1050;
+  top: 0;
+  left: 0;
+  background-color: var(--brand-2);
+  overflow-x: hidden;
+  transition: width 0.2s ease;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 24px;
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: white;
+  display: block;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 12px;
+  font-size: 2rem;
+  padding: 0.25rem 0.75rem;
+  color: white;
+  background: transparent;
+  border: 0;
+}
+
+.line1,
+.line2 {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  margin-left: 12px;
+}
+
+/* Footer: keep in normal flow (no absolute positioning) */
+.footer {
+  background-color: var(--brand-1);
+  width: 100%;
+  position: static !important;
+}
+
+.footer_para {
+  color: white;
+  margin-top: 2rem !important;
+  font-size: 1.1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.row {
+  justify-content: space-around;
+}
+
