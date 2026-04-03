@@ -4,7 +4,7 @@
 const contacts = [
     {
         name: 'Student 1',
-        profilePic: 'https://th.bing.com/th/id/OIP.M189YlKQNYnC0pjhiLpJDQAAAA?rs=1&pid=ImgDetMain',
+        profilePic: 'https://images.pexels.com/photos/28704691/pexels-photo-28704691.jpeg',
         lastMessage: 'See you soon!',
         messages: [
             { type: 'received', text: 'Hey, are we still on for tonight?', time: '10:00 AM' },
