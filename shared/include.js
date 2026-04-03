@@ -53,9 +53,10 @@ function setupSidebar() {
   const openButton = document.querySelector(".js-sidebar-open");
   const closeButton = document.querySelector(".js-sidebar-close");
   const backdrop = document.querySelector(".js-sidebar-backdrop");
+  if (backdrop) backdrop.hidden = true;
 
   function openNav() {
-    sidebar.style.width = "min(370px, 85vw)";
+    sidebar.classList.add("is-open");
     sidebar.setAttribute("aria-hidden", "false");
     if (openButton) openButton.setAttribute("aria-expanded", "true");
     if (backdrop) backdrop.hidden = false;
@@ -63,7 +64,7 @@ function setupSidebar() {
   }
 
   function closeNav() {
-    sidebar.style.width = "0";
+    sidebar.classList.remove("is-open");
     sidebar.setAttribute("aria-hidden", "true");
     if (openButton) openButton.setAttribute("aria-expanded", "false");
     if (backdrop) backdrop.hidden = true;

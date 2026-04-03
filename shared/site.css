@@ -54,18 +54,24 @@ main.page-content {
 
 .site-header .sidebar {
   height: 100%;
-  width: 0;
+  width: min(370px, 85vw);
   position: fixed;
   z-index: 1050;
   top: 0;
   left: 0;
   background-color: var(--brand-2);
   overflow-x: hidden;
-  transition: width 0.2s ease;
+  transform: translateX(-105%);
+  transition: transform 0.2s ease;
+  will-change: transform;
   display: flex;
   flex-direction: column;
   padding: 3.25rem 0.75rem 1rem;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.site-header .sidebar.is-open {
+  transform: translateX(0);
 }
 
 .site-header .sidebar a {
