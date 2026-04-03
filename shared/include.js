@@ -52,21 +52,27 @@ function setupSidebar() {
 
   const openButton = document.querySelector(".js-sidebar-open");
   const closeButton = document.querySelector(".js-sidebar-close");
+  const backdrop = document.querySelector(".js-sidebar-backdrop");
 
   function openNav() {
     sidebar.style.width = "min(370px, 85vw)";
     sidebar.setAttribute("aria-hidden", "false");
     if (openButton) openButton.setAttribute("aria-expanded", "true");
+    if (backdrop) backdrop.hidden = false;
+    document.body.style.overflow = "hidden";
   }
 
   function closeNav() {
     sidebar.style.width = "0";
     sidebar.setAttribute("aria-hidden", "true");
     if (openButton) openButton.setAttribute("aria-expanded", "false");
+    if (backdrop) backdrop.hidden = true;
+    document.body.style.overflow = "";
   }
 
   if (openButton) openButton.addEventListener("click", openNav);
   if (closeButton) closeButton.addEventListener("click", closeNav);
+  if (backdrop) backdrop.addEventListener("click", closeNav);
 
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") closeNav();

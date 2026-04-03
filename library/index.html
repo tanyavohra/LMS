@@ -9,62 +9,160 @@
     <link rel="stylesheet" href="../shared/site.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="library-page">
     <div id="site-header"></div>
 
     <main class="page-content">
-      <div class="container">
-        <header>
-          <h1>Library</h1>
-        </header>
+      <div class="container py-4">
+        <div class="library-panel p-4 p-md-5">
+          <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+            <div>
+              <h1 class="library-title mb-1">Library</h1>
+              <p class="library-subtitle mb-0">
+                NCERT-aligned resources for classes 6–12
+              </p>
+            </div>
 
-        <section id="library-intro">
-          <h2>Welcome to the Library</h2>
-          <p>
-            Explore a comprehensive collection of resources aligned with the NCERT
-            curriculum for classes 6-12. Our library provides easy access to textbooks,
-            reference materials, practice papers, and more, all tailored to help students
-            excel in their academic journey.
-          </p>
-        </section>
-
-        <section id="resources">
-          <h2>Resources by Class</h2>
-          <div class="class-group">
-            <h3>Class 6</h3>
-            <ul>
-              <li><a href="#">Mathematics Textbook</a></li>
-              <li><a href="#">Science Textbook</a></li>
-              <li><a href="#">Social Science Textbook</a></li>
-              <li><a href="#">English Literature</a></li>
-              <li><a href="#">Hindi Literature</a></li>
-            </ul>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-outline-dark btn-sm" href="/index.html"
+                ><i class="fa-solid fa-house me-2"></i>Home</a
+              >
+              <a class="btn btn-outline-dark btn-sm" href="/dashboard/index.html"
+                ><i class="fa-solid fa-chart-line me-2"></i>Dashboard</a
+              >
+              <a class="btn btn-outline-dark btn-sm" href="/shop/index.html"
+                ><i class="fa-solid fa-bag-shopping me-2"></i>Shop</a
+              >
+            </div>
           </div>
 
-          <div class="class-group">
-            <h3>Class 7</h3>
-            <ul>
-              <li><a href="#">Mathematics Textbook</a></li>
-              <li><a href="#">Science Textbook</a></li>
-              <li><a href="#">Social Science Textbook</a></li>
-              <li><a href="#">English Literature</a></li>
-              <li><a href="#">Hindi Literature</a></li>
-            </ul>
-          </div>
+          <hr class="my-4" />
 
-          <!-- Add more class groups as needed -->
+          <section class="mb-4" aria-label="Library intro">
+            <h2 class="h4 fw-bold library-section-title mb-2">
+              Welcome to the Library
+            </h2>
+            <p class="mb-0">
+              Explore a comprehensive collection of resources aligned with the NCERT
+              curriculum for classes 6–12. Find textbooks, reference materials, and
+              practice content to support your learning.
+            </p>
+          </section>
 
-          <div class="class-group">
-            <h3>Class 12</h3>
-            <ul>
-              <li><a href="#">Mathematics Textbook</a></li>
-              <li><a href="#">Physics Textbook</a></li>
-              <li><a href="#">Chemistry Textbook</a></li>
-              <li><a href="#">Biology Textbook</a></li>
-              <li><a href="#">English Literature</a></li>
-            </ul>
-          </div>
-        </section>
+          <section aria-label="Resources by class">
+            <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+              <h2 class="h4 fw-bold library-section-title mb-0">
+                Resources by Class
+              </h2>
+              <div class="library-hint text-muted">
+                <i class="fa-solid fa-circle-info me-2"></i>Links are placeholders for now
+              </div>
+            </div>
+
+            <div class="row g-4">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card library-card h-100">
+                  <div class="card-header library-card-header">Class 6</div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="#">Mathematics</a></li>
+                    <li class="list-group-item"><a href="#">Science</a></li>
+                    <li class="list-group-item"><a href="#">Social Science</a></li>
+                    <li class="list-group-item"><a href="#">English</a></li>
+                    <li class="list-group-item"><a href="#">Hindi</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card library-card h-100">
+                  <div class="card-header library-card-header">Class 7</div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="#">Mathematics</a></li>
+                    <li class="list-group-item"><a href="#">Science</a></li>
+                    <li class="list-group-item"><a href="#">Social Science</a></li>
+                    <li class="list-group-item"><a href="#">English</a></li>
+                    <li class="list-group-item"><a href="#">Hindi</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card library-card h-100">
+                  <div class="card-header library-card-header">Class 8</div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <a href="/subject/math/math.html">Mathematics</a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="/subject/science/science.html">Science</a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="/subject/sst/sst.html">Social Science</a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="/subject/english/eng.html">English</a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="/subject/hindi/hindi.html">Hindi</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card library-card h-100">
+                  <div class="card-header library-card-header">Class 9</div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="#">Mathematics</a></li>
+                    <li class="list-group-item"><a href="#">Science</a></li>
+                    <li class="list-group-item"><a href="#">Social Science</a></li>
+                    <li class="list-group-item"><a href="#">English</a></li>
+                    <li class="list-group-item"><a href="#">Hindi</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card library-card h-100">
+                  <div class="card-header library-card-header">Class 10</div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="#">Mathematics</a></li>
+                    <li class="list-group-item"><a href="#">Science</a></li>
+                    <li class="list-group-item"><a href="#">Social Science</a></li>
+                    <li class="list-group-item"><a href="#">English</a></li>
+                    <li class="list-group-item"><a href="#">Hindi</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card library-card h-100">
+                  <div class="card-header library-card-header">Class 11</div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="#">Mathematics</a></li>
+                    <li class="list-group-item"><a href="#">Physics</a></li>
+                    <li class="list-group-item"><a href="#">Chemistry</a></li>
+                    <li class="list-group-item"><a href="#">Biology</a></li>
+                    <li class="list-group-item"><a href="#">English</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card library-card h-100">
+                  <div class="card-header library-card-header">Class 12</div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="#">Mathematics</a></li>
+                    <li class="list-group-item"><a href="#">Physics</a></li>
+                    <li class="list-group-item"><a href="#">Chemistry</a></li>
+                    <li class="list-group-item"><a href="#">Biology</a></li>
+                    <li class="list-group-item"><a href="#">English</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
     </main>
 
